@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testBack-1
+  annotations:
+    github.com/project-slug: danludwig-happymoney/testBack-1
+spec:
+  type: other
+  lifecycle: unknown
+  owner: engineering-productivity
