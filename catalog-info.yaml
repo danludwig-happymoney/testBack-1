@@ -1,10 +1,23 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: testBack-1
+  name: webcrawler
+  description: an example
+  tags:
+    - test
+    - java
+  links:
+    - url: https://github.com/dludwig-happymoney/testBack-1
+      title: Github Repo
+      icon: github
   annotations:
+    # The annotation is deprecated, we use placeholders (see below) instead, remove it later.
+    backstage.io/techdocs-ref: url:https://github.com/danludwig-happymoney/testBack-2
     github.com/project-slug: danludwig-happymoney/testBack-1
+#    backstage.io/definition-at-location: 'url:https://backstage.io/docs/features/software-catalog/software-catalog-overview'
 spec:
-  type: other
-  lifecycle: unknown
+  type: openapi
+  lifecycle: experimental
   owner: engineering-productivity
+  definition:
+      $text: https://github.com/danludwig-happymoney/testBack-2/blob/main/swagger.yaml
